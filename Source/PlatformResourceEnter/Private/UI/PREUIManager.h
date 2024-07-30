@@ -4,7 +4,10 @@
 
 #include "IWebBrowserSingleton.h"
 
-class URSEBrowserBinding;
+class UPREBrowserBinding;
+class SDockTab;
+class SWebBrowser;
+class SWindow;
 
 /**
  *
@@ -23,6 +26,12 @@ protected:
 protected:
 	const FText PRETabDisplay = FText::FromString("Platform Resource Enter");
 	const FText PREToolTip = FText::FromString("Launch Platform Resource Enter");
+
+public:
+	FCreateBrowserWindowSettings WindowSettings;
+	TSharedPtr<IWebBrowserWindow> Browser;
+	TSharedPtr<SWebBrowser> WebBrowserWidget;
+	TSharedPtr<SDockTab> LocalBrowserDock;
 };
 
 /**
@@ -35,5 +44,5 @@ public:
 	static void Shutdown();
 
 	static TSharedPtr<FPREUIManagerImpl> Instance;
-	static URSEBrowserBinding* BrowserBinding;
+	static UPREBrowserBinding* PREBrowserBinding;
 };

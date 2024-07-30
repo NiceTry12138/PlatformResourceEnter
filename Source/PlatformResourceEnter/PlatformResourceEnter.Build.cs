@@ -47,6 +47,7 @@ public class PlatformResourceEnter : ModuleRules
 				"EditorInteractiveToolsFramework",
 				"WebBrowser",
                 "ToolMenus",
+                "DeveloperSettings",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

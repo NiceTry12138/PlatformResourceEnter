@@ -7,13 +7,16 @@
 #include "PREBrowserBinding.generated.h"
 
 // 下载	
-DECLARE_DELEGATE_TwoParams(FOnRSEDownload, FString, FString);
+DECLARE_DELEGATE_TwoParams(FOnPREDownload, FString, FString);
 
 // 更新
-DECLARE_DELEGATE_TwoParams(FOnRSEUpdate, FString, FString);
+DECLARE_DELEGATE_TwoParams(FOnPREUpdate, FString, FString);
 
 // 上传
-DECLARE_DELEGATE_TwoParams(FOnRSEUpload, FString, FString);
+DECLARE_DELEGATE_TwoParams(FOnPREUpload, FString, FString);
+
+// 退出
+DECLARE_DELEGATE_OneParam(FOnPREExit, FString);
 
 /**
  * 
@@ -21,6 +24,8 @@ DECLARE_DELEGATE_TwoParams(FOnRSEUpload, FString, FString);
 UCLASS()
 class UPREBrowserBinding : public UObject
 {
-	GENERATED_BODY()
+	GENERATED_UCLASS_BODY()
 	
+public:
+	FOnPREExit FOnPREExitDelegate;
 };
