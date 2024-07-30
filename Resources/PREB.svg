@@ -1,8 +1,1 @@
-<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-
- <g>
-  <title>Layer 1</title>
-  <rect id="svg_5" height="14.52055" width="14.58904" y="0.73973" x="0.70548" stroke-width="0" stroke="#000" fill="#898989"/>
-  <text transform="matrix(1 0 0 1 0 0)" stroke-width="0" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="7" id="svg_1" y="10.77397" x="2.04217" stroke="#000" fill="#000000">PSL</text>
- </g>
-</svg>
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#3B88C3" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path fill="#FFF" d="M9.925 9.032c0-1.271.93-2.294 2.325-2.294c1.333 0 2.325.868 2.325 2.294v6.697l7.627-8.124c.342-.372.93-.868 1.799-.868c1.178 0 2.295.899 2.295 2.232c0 .806-.496 1.457-1.52 2.48l-5.861 5.767l7.162 7.473c.744.744 1.303 1.426 1.303 2.357c0 1.457-1.146 2.139-2.418 2.139c-.898 0-1.488-.526-2.357-1.457l-8.031-8.682v7.906c0 1.21-.93 2.232-2.325 2.232c-1.333 0-2.325-.867-2.325-2.232V9.032z"></path></svg>

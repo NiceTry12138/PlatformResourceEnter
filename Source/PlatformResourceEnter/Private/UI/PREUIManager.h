@@ -18,6 +18,11 @@ public:
 protected:
 	void SetupMenuItem();
 	void CreateWindow();
+	TSharedRef<SDockTab> CreateWindowTab(const FSpawnTabArgs& Args);
+
+protected:
+	const FText PRETabDisplay = FText::FromString("Platform Resource Enter");
+	const FText PREToolTip = FText::FromString("Launch Platform Resource Enter");
 };
 
 /**

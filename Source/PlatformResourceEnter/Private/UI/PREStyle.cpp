@@ -81,6 +81,6 @@ void FPREStyle::SetSVGIcon(const FString& StyleName, const FString& ResourcePath
 TUniquePtr<FSlateStyleSet> FPREStyle::Create()
 {
 	TUniquePtr< FSlateStyleSet > Style = MakeUnique<FSlateStyleSet>(GetStyleSetName());
-	Style->SetContentRoot(FPaths::EnginePluginsDir() / TEXT("PlatformResourceEnter/Resources"));
+	Style->SetContentRoot(FPaths::ProjectPluginsDir() / TEXT("PlatformResourceEnter/Resources"));
 	return Style;
 }
