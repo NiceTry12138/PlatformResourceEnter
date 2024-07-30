@@ -165,7 +165,7 @@ TSharedRef<SDockTab> FPREUIManagerImpl::CreateWindowTab(const FSpawnTabArgs& Arg
 		.OnTabClosed_Lambda([](TSharedRef<class SDockTab> InParentTab)
 			{
 				// 绑定结束事件
-				FPREUIManager::PREBrowserBinding->FOnPREExitDelegate.ExecuteIfBound("Plugin Window Closed");
+				FPREUIManager::PREBrowserBinding->OnPREExitDelegate.ExecuteIfBound("Plugin Window Closed");
 				FPREUIManager::PREBrowserBinding = nullptr;
 
 				// 清理缓存

@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-  margin-left: 200px;
-  background: #5d9ab2 no-repeat top left;
-}
+  <style>
+    body {
+      margin-left: 200px;
+      background: #5d9ab2 no-repeat top left;
+    }
 
-.center_div {
-  border: 1px solid gray;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  background-color: #d0f0f6;
-  text-align: left;
-  padding: 8px;
-}
-</style>
+    .center_div {
+      border: 1px solid gray;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      background-color: #d0f0f6;
+      text-align: left;
+      padding: 8px;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="center_div">
+    <h1>Hello World!</h1>
+    <p>测试界面</p>
+    <button onclick="test()">点击这里</button>
+    <p id="demo"></p>
+  </div>
 
-<div class="center_div">
-  <h1>Hello World!</h1>
-  <p>测试界面</p>
-</div>
+  <script type="text/javascript">
+    function test() {
+      ue.browserbinding.ondownloadbuttonclick("js", 10086);
+    }
 
+    ue.browserbinding.onexitcallback.call(ue.browserbinding, (function(){
+      alert("on exit callback");
+    }))
+    </script>
 </body>
+
 </html>

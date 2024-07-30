@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "PREBrowserBinding.generated.h"
+struct FWebJSFunction;
 
 // обть	
 DECLARE_DELEGATE_TwoParams(FOnPREDownload, FString, FString);
@@ -27,5 +28,12 @@ class UPREBrowserBinding : public UObject
 	GENERATED_UCLASS_BODY()
 	
 public:
-	FOnPREExit FOnPREExitDelegate;
+	FOnPREExit OnPREExitDelegate;
+
+public:
+	UFUNCTION()
+	void OnExitCallback(FWebJSFunction ObExitJSCallback);
+
+	UFUNCTION()
+	void OnDownLoadButtonClick(FString Param1, int Param2);
 };
